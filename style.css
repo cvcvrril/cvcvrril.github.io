@@ -1,3 +1,21 @@
+    /*General*/
+    .status-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-flex;
+        margin-left: 10px;
+      }
+      .status-green {
+        background-color: green;
+      }
+      .status-yellow {
+        background-color: rgb(227, 204, 0);
+      }
+      .status-red {
+        background-color: red;
+      }
+    
     
     /*Modo Claro*/
     
