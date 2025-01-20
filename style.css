@@ -1,6 +1,19 @@
-@keyframes hover-fade {
-    from {box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);}
-    to {box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);}
+    
+    /*Modo Claro*/
+    
+    body{
+        background-color: white;
+        color: black;
+    }
+    
+    
+    @keyframes hover-fade {
+        from {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        to {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
     }
 
     .project-card {
@@ -37,4 +50,51 @@
         max-width: 85%;
         height: auto;
         margin-bottom: 20px;
+    }
+
+    #color-mode{
+        background: none;
+        border: none;
+        font-size: 36px;
+        color: inherit;
+    }
+
+    .material-icons{
+        font-size: 36px;
+    }
+
+    /*Modo Oscuro*/
+
+    body.dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .project-card {
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+        border: 1px solid #444;
+        background-color: #1c1b1b;
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .project-card:hover {
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        background-color: #1c1b1b;
+    }
+    
+    body.dark-mode #left-column {
+        /*background-color: #1f1f1f;*/
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode #pfp {
+        filter: brightness(0.7);
+    }
+    
+    body.dark-mode #color-mode {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .material-icons {
+        color: #e0e0e0;
     }

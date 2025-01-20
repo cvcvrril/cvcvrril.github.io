@@ -2,61 +2,67 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Inés Martínez</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Inés Martínez</title>
+
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row mt-4">
-          <!-- Columna lateral -->
-          <div id= "left-column" class="col-md-2 col-lg-2 bg-light p-3">
-            <img id="pfp" src="https://avatars.githubusercontent.com/u/132656887?v=4" >
-            <p>Inés Martínez</p>
-            <p>@cvcvrril</p>
-            <p>ines07mar@outlook.es</p>
-            <p>Backend dev and cybersec specialist in making</p>
-			</br>
-			<ul id = "lateral-menu">
-				<li>Proyectos.</li>
-				<li>Sobre mi.</li>
-				<li>Contacto.</li>
-			</ul>
-          </div>
-    
-          <!-- Columna principal -->
-          <main class="col-md-8 col-lg-8 p-4">
-            <h1>Proyectos.</h1>
-            
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="project-card">
-                            <h3>Scrap Movil</h3>
-                            <p>Web scraper creado con Python y Scrapy.</p>
-                            <p>Estado: </p>
-                            <p>Tecnologías usadas: </p>
-                            <a href="https://github.com/cvcvrril/scrap-movil" target="_blank">Repositorio</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contenido adicional como proyectos, imágenes, etc. -->
-          </main>
-        </div>
-    
-        <!-- Footer -->
-        <footer class="row bg-dark text-white text-center py-3 mt-4">
-          <div class="col">
-            <p>&copy; 2025 Inés Martínez.</p>
-          </div>
-        </footer>
+  <div class="container-fluid">
+    <div class="row mt-4">
+      <!-- Columna lateral -->
+      <div id="left-column" class="col-md-2 col-lg-2 bg-light p-3">
+        <img id="pfp" src="https://avatars.githubusercontent.com/u/132656887?v=4">
+        <p>Inés Martínez</p>
+        <p>@cvcvrril</p>
+        <p>ines07mar@outlook.es</p>
+        <p>Backend dev and cybersec specialist in making</p>
+        </br>
+        <ul id="lateral-menu">
+          <li>Proyectos.</li>
+          <li>Sobre mi.</li>
+          <li>Contacto.</li>
+        </ul>
+      </br>
+      <button id="color-mode" class="btn-secondary">
+        <span class="material-icons">dark_mode</span>
+      </button>
       </div>
+
+      <!-- Columna principal -->
+      <main class="col-md-8 col-lg-8 p-4">
+        <h1>Proyectos.</h1>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="project-card">
+                <h3>Scrap Movil</h3>
+                <p>Web scraper creado con Python y Scrapy.</p>
+                <p>Estado: </p>
+                <p>Tecnologías usadas: </p>
+                <a href="https://github.com/cvcvrril/scrap-movil" target="_blank">Repositorio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido adicional como proyectos, imágenes, etc. -->
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="row text-white text-center py-3 mt-4">
+      <div class="col bg-dark">
+        <p>&copy; 2025 Inés Martínez.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
