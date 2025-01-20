@@ -1,0 +1,40 @@
+@keyframes hover-fade {
+    from {box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);}
+    to {box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);}
+    }
+
+    .project-card {
+        border: 1px solid #0000001e;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin: 10px 0;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    .project-card:hover {
+        border: 1px solid #0000001e;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        margin: 10px 0;
+        background-color: #fff;
+        border-radius: 10px;
+        animation-name:hover-fade;
+        animation-duration:0.1s;
+    }
+    
+    #left-column{
+        margin-left: 10px; 
+        margin-top: 200px;
+    }
+    
+    #lateral-menu{
+        list-style-type: none;
+    }
+    
+    #pfp{
+        border-radius: 50%;
+        max-width: 85%;
+        height: auto;
+        margin-bottom: 20px;
+    }
