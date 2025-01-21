@@ -1,0 +1,127 @@
+    /*General*/
+
+    .status-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-flex;
+        margin-left: 10px;
+    }
+
+    .status-green {
+        background-color: green;
+    }
+
+    .status-yellow {
+        background-color: rgb(227, 204, 0);
+    }
+
+    .status-red {
+        background-color: red;
+    }
+    
+    .project-image {
+        width: 100%; 
+        height: auto;
+        border-radius: 10px; 
+        margin-bottom: 10px;
+    }
+    
+    /*Modo Claro*/
+    
+    body{
+        background-color: white;
+        color: black;
+    }
+    
+    
+    @keyframes hover-fade {
+        from {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        to {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .project-card {
+        border: 1px solid #0000001e;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin: 10px 0;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    .project-card:hover {
+        border: 1px solid #0000001e;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        margin: 10px 0;
+        background-color: #fff;
+        border-radius: 10px;
+        animation-name:hover-fade;
+        animation-duration:0.1s;
+    }
+    
+    #left-column{
+        margin-left: 10px; 
+        margin-top: 200px;
+    }
+    
+    #lateral-menu{
+        list-style-type: none;
+    }
+    
+    #pfp{
+        border-radius: 50%;
+        max-width: 85%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #color-mode{
+        background: none;
+        border: none;
+        font-size: 36px;
+        color: inherit;
+    }
+
+    .material-icons{
+        font-size: 36px;
+    }
+
+    /*Modo Oscuro*/
+
+    body.dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .project-card {
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+        border: 1px solid #444;
+        background-color: #1c1b1b;
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .project-card:hover {
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        background-color: #1c1b1b;
+    }
+    
+    body.dark-mode #left-column {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode #pfp {
+        filter: brightness(0.7);
+    }
+    
+    body.dark-mode #color-mode {
+        color: #e0e0e0;
+    }
+    
+    body.dark-mode .material-icons {
+        color: #e0e0e0;
+    }
