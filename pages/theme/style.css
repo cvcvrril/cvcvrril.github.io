@@ -92,14 +92,15 @@
     }
 
     .know-box{
-        border-radius: 3px;
-        height: 20px;
-        width: 50px;
+        border-radius: 5px;
+        height: auto;
+        padding: 5px 10px;
         background-color: #00000031;
         text-align: center;
         display: inline-block;
-        position: relative;
-        margin: 3px;
+        margin: 5px;
+        font-size: 14px;
+        line-height: 1.5;
     }
 
     /*Modo Oscuro*/
