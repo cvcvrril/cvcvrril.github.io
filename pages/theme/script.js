@@ -5,13 +5,6 @@ fetch("pages/sidebar.html")
 
         const colorModeButton = document.getElementById("color-mode");
 
-        const isDarkMode = localStorage.getItem("darkMode") === "true";
-        if (isDarkMode) {
-            document.body.classList.add("dark-mode");
-            const icon = document.querySelector(".material-icons");
-            if (icon) icon.textContent = "light_mode";
-        }
-
         if (colorModeButton) {
             colorModeButton.addEventListener("click", function () {
                 document.body.classList.toggle("dark-mode");

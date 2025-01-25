@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="pages/theme/style.css">
+  
   <title>Inés Martínez</title>
 
 </head>
@@ -16,7 +17,7 @@
   <div class="container-fluid">
     <div class="row mt-4">
       <!-- Columna lateral -->
-      <div id="sidebar"></div>
+      <div id="sidebar" class="col-md-2 col-lg-2 bg-light p-3"></div>
 
       <!-- Columna principal -->
       <main class="col-md-8 col-lg-8 p-4">
@@ -39,7 +40,7 @@
               <div class="know-box">JavaScript</div>
               <div class="know-box">HTML</div>
               <div class="know-box">CSS</div>
-              <div class="know-box">MySQL</div>
+              <div class="know-box">SQL</div>
               <h3>📚 Librerías y frameworks</h3>
               <div class="know-box">Spring</div>
               <div class="know-box">Bootstrap</div>
@@ -76,6 +77,16 @@
     <!-- Footer -->
     <div id="footer"></div>
   </div>
+
+  <script>
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    if (isDarkMode) {
+        document.body.classList.add("dark-mode");
+        const icon = document.querySelector(".material-icons");
+        if (icon) icon.textContent = "light_mode";
+    }
+  </script>
+
   <script src="pages/theme/script.js"></script>
 
 </body>
